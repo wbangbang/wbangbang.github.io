@@ -125,7 +125,7 @@
     <div class="article-meta">
       
 	<a href="/2020/05/01/SetupBlogViaHexo&GitHubPages/" class="article-date">
-	  <time datetime="2020-05-01T01:56:23.719Z" itemprop="datePublished">May 1, 2020</time>
+	  <time datetime="2020-05-01T02:52:22.524Z" itemprop="datePublished">May 1, 2020</time>
 	</a>
 
        
@@ -133,52 +133,18 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://drive.google.com/uc?export=view&id=1tM2V4a4e4ZzliOxjTc6sO8la6MIpwfIF" alt=""></p>
-<h2 id="Why-Hexo"><a href="#Why-Hexo" class="headerlink" title="Why Hexo"></a>Why Hexo</h2><p>According to <a href="https://stackshare.io/stackups/hexo-vs-jekyll" target="_blank" rel="noopener">this</a>:</p>
-<blockquote>
-<p>Some of the features offered by Hexo are:</p>
-<ul>
-<li>Blazing Fast - Node.js brings you incredible generating speed. Hundreds of files take only seconds to build.</li>
-<li>Markdown Support - All features of GitHub Flavored Markdown are supported. You can even use most Octopress plugins in Hexo.</li>
-<li>One-Command Deployment - You only need one command to deploy your site to GitHub Pages, Heroku or other sites.</li>
-</ul>
-<p>On the other hand, Jekyll provides the following key features:</p>
-<ul>
-<li>Simple - No more databases, comment moderation, or pesky updates to install—just your content.</li>
-<li>Static - Markdown (or Textile), Liquid, HTML &amp; CSS go in. Static sites come out ready for deployment.</li>
-<li>Blog-aware - Permalinks, categories, pages, posts, and custom layouts are all first-class citizens here.</li>
-</ul>
-</blockquote>
-<p>Hexo is powered by Node.js, while Jekyll is powered by Ruby. I’m not a fan of Ruby and I’m ramping up on Node.js, so that Hexo sounds more right.</p>
-<h2 id="Setup"><a href="#Setup" class="headerlink" title="Setup"></a>Setup</h2><p>Please ensure you have the following installed before installing hexo:</p>
-<ul>
-<li>Node.js (Should be at least Node.js 8.10, recommends 10.0 or higher)</li>
-<li>Git</li>
-</ul>
-<p>You can easily install Hexo via npm:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+        
+          <div class="entry-thumbnail">
+            <a href="/2020/05/01/SetupBlogViaHexo&GitHubPages/"><img src="https://drive.google.com/uc?export=view&amp;id=1tM2V4a4e4ZzliOxjTc6sO8la6MIpwfIF" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
+          </div>
+          <div class="entry-summary">
+          This post is to show how to setup a personal blog via Hexo and GitHub Pages step by step.
 
-<p>This section only shows a simple installation. For more details or advanced installation, you may want to refer to <a href="https://hexo.io/docs/#Installation" target="_blank" rel="noopener">here</a>.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ cd &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-
-<p>For more details or advanced installation, you may want to refer to <a href="https://hexo.io/docs/setup" target="_blank" rel="noopener">here</a>.</p>
-<h2 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h2><p>How to get your Hexo blog deployed on GitHub Pages? You may want to check the tutorial <a href="https://hexo.io/docs/github-pages" target="_blank" rel="noopener">here</a>.</p>
-<p>For Step#2, to push your local folder into GitHub, you can do the following:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">$ cd &lt;current_working_directory_of_your_local_project&gt;</span><br><span class="line"></span><br><span class="line"># Initialize the local directory as a Git repository.</span><br><span class="line">$ git init</span><br><span class="line"></span><br><span class="line"># Add all the files in your new local repository.</span><br><span class="line">$ git add .</span><br><span class="line"></span><br><span class="line"># Commit them.</span><br><span class="line">$ git commit -m &quot;First commit&quot;</span><br><span class="line"></span><br><span class="line"># Copy the remote repository URL and paste below to set it as remote</span><br><span class="line">$ git remote add origin &lt;remote_repository_URL&gt;</span><br><span class="line"></span><br><span class="line"># Verifies the new remote URL</span><br><span class="line">$ git remote -v</span><br><span class="line"></span><br><span class="line"># Push the changes in your local repository to GitHub.</span><br><span class="line">$ git push origin master</span><br></pre></td></tr></table></figure>
-
-<p>(<a href="https://superuser.com/questions/1412078/bring-a-local-folder-to-remote-git-repo" target="_blank" rel="noopener">Reference</a>).</p>
-<p>Step#8~#10 are not accurate:</p>
-<p>Please see a GitHub’s document <a href="https://help.github.com/en/github/working-with-github-pages/about-github-pages" target="_blank" rel="noopener">About GitHub Pages</a>:</p>
-<blockquote>
-<p>The default publishing source for user and organization sites is the master branch. If the repository for your user or organization site has a master branch, your site will publish automatically from that branch. You cannot choose a different publishing source for user or organization sites.</p>
-</blockquote>
-<p>This being said, you cannot change the source. Instead, you need the following:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">sudo: false</span><br><span class="line">language: node_js</span><br><span class="line">node_js:</span><br><span class="line">  - 10</span><br><span class="line">cache: npm</span><br><span class="line">branches:</span><br><span class="line">  only:</span><br><span class="line">    - hexo-source # store source code of hexo in hexo-source branch</span><br><span class="line">script:</span><br><span class="line">  - hexo generate</span><br><span class="line">deploy:</span><br><span class="line">  provider: pages</span><br><span class="line">  skip-cleanup: true</span><br><span class="line">  github-token: $GH_TOKEN</span><br><span class="line">  keep-history: true</span><br><span class="line">  # added</span><br><span class="line">  target_branch: master # generate static files to master</span><br><span class="line">  on:</span><br><span class="line">    branch: hexo-source # source code of hexo</span><br><span class="line">  local-dir: public</span><br></pre></td></tr></table></figure>
-
-<p>And you need to create a new branch <code>hexo-generate</code> and use it to store your source code; and use <code>master</code> to store built artifacts. </p>
-<p>You may want to refer to <a href="https://www.git-tower.com/learn/git/faq/track-remote-upstream-branch" target="_blank" rel="noopener">How do you track a remote branch?</a> and <a href="https://stackoverflow.com/questions/520650/make-an-existing-git-branch-track-a-remote-branch" target="_blank" rel="noopener">Make an existing Git branch track a remote branch?
-</a>.</p>
-<h2 id="Troubleshooting"><a href="#Troubleshooting" class="headerlink" title="Troubleshooting"></a>Troubleshooting</h2><h3 id=""><a href="#" class="headerlink" title=""></a></h3>
+        
+          <p class="article-more-link">
+            <a href="/2020/05/01/SetupBlogViaHexo&GitHubPages/#more">Continue Reading →</a>
+          </p>
+        </div>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -214,7 +180,7 @@
     <div class="article-meta">
       
 	<a href="/2020/05/01/hello-world/" class="article-date">
-	  <time datetime="2020-05-01T01:56:23.719Z" itemprop="datePublished">May 1, 2020</time>
+	  <time datetime="2020-05-01T02:52:22.524Z" itemprop="datePublished">May 1, 2020</time>
 	</a>
 
        
@@ -315,7 +281,10 @@
           <li class="clearfix">
 
             
-              <div class="widget-entry-summary" style="margin: 0;">
+              <div class="widget-entry-thumbnail">
+                <a href="/2020/05/01/SetupBlogViaHexo&GitHubPages/" title=""><img width="50" height="50" src="https://drive.google.com/uc?export=view&amp;id=1tM2V4a4e4ZzliOxjTc6sO8la6MIpwfIF" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title=""></a>
+              </div>
+              <div class="widget-entry-summary">
             
 
               <h6 style="margin: 0;"><a href="/2020/05/01/SetupBlogViaHexo&GitHubPages/">Set up Blog via Hexo &amp; GitHub Pages</a></h6>
