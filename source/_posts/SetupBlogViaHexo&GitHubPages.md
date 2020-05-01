@@ -2,10 +2,15 @@
 title: Set up Blog via Hexo & GitHub Pages
 layout: post
 tags:
-- Hexo
+  - Hexo
+photos:
+  - https://drive.google.com/uc?export=view&id=1tM2V4a4e4ZzliOxjTc6sO8la6MIpwfIF
 ---
 
-![](https://drive.google.com/uc?export=view&id=1tM2V4a4e4ZzliOxjTc6sO8la6MIpwfIF)
+This post is to show how to setup a personal blog via Hexo and GitHub Pages step by step.
+
+<!--more-->
+
 
 ## Why Hexo
 
@@ -24,7 +29,6 @@ According to [this](https://stackshare.io/stackups/hexo-vs-jekyll):
 > * Blog-aware - Permalinks, categories, pages, posts, and custom layouts are all first-class citizens here.
 
 Hexo is powered by Node.js, while Jekyll is powered by Ruby. I'm not a fan of Ruby and I'm ramping up on Node.js, so that Hexo sounds more right.
-
 
 ## Setup 
 
